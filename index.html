@@ -9,23 +9,53 @@
       Anything inside these here doodads will not be parsed by the browser
       They're comments. I can put whatever I want in here
     -->
-    <title>Hello, Assholes</title>
+    <title>WinKids Schedule</title>
   </head>
   <body>
     <!--
       <h1> tags are supposed to reserved for the most important header
       on the page
     -->
-    <h1>Hey John!  I created a link and a button that links but....</h1>
-    <a href="http://i.imgur.com/8J84I.png">Win Kids Schedule Example</a>
-    <h2>How do I use base.css buttons to link to something?</h2>
-    <form method="Link" Action="http://i.imgur.com/8J84I.png">
-      <Input type="submit" Value="Link to Schedule"></form>
-    <button class="btn btn-primary">
+    <h1>You can add the 'btn' class to any element to make it look like the a button</h1>
+    <a href="http://i.imgur.com/8J84I.png" class="btn">Win Kids Schedule Example</a>
+    <h2>Forms are for entering data</h2>
+    <form class="form-horizontal">
+      <legend>Register</legend>
+      <!--
+        Notice the reusable components we're using and how they group things together on the page
 
-      Hey, There is a button.  Press it
-    </button>
-    <h3>Hello, Assholes. Let's start some learnin'</h3>
+        div.control-group
+          > label.control-label
+          > div.controls
+            > input
+      -->
+      <div class="control-group">
+        <label for="firstName" class="control-label">First Name</label>
+        <div class="controls">
+          <input type="text" id="firstName">
+        </div>
+      </div>
+      <!-- Control group -->
+      <div class="control-group">
+        <label for="lastName" class="control-label">Last Name</label>
+        <div class="controls">
+          <input type="text" id="lastName">
+        </div>
+      </div>
+      <!-- Control group -->
+      <div class="control-group">
+        <label for="screenName" class="control-label">Screen Name</label>
+        <div class="controls">
+          <input type="text" id="screenName">
+        </div>
+      </div>
+      <!-- Form actions - submit or reset -->
+      <div class="form-actions">
+        <button class="btn btn-primary">Register!</button>
+        <button class="btn">Reset</button>
+      </div>
+    </form>
+
     <div class="schedule-wrapper">
       <table class="table table-bordered table-condensed">
 
@@ -41,8 +71,8 @@
 
         <tr>
            <td><ul class="unstyled">
-          
-            
+
+
             <li><b>1:00-2:30</b></li>
              <li> child's name</li>
              <li> mother's name</li>
@@ -53,8 +83,8 @@
           </ul>
         </tr>
 
-        <tr> 
-        <td> 
+        <tr>
+        <td>
           <ul class="unstyled">
           <li><b>2:00-3:30</b></li>
              <li> child's name</li>
@@ -69,11 +99,11 @@
           <li> child's name</li>
              <li> mother's name</li>
              <li> phone #</li></ul> </td>
-           
+
         </tr>
 
 
-        <tr> 
+        <tr>
           <td><ul class="unstyled">
           <li><b>3:00-4:30</b></li>
           <li> child's name</li>
@@ -87,7 +117,7 @@
             <li><b>4:15-6:00</b></li>
           </ul></td>
            </ul>
-        </tr> <tr> 
+        </tr> <tr>
           <td><ul class="unstyled">
           <li><b>4:00-5:30</b></li>
           <li> child's name</li>
@@ -100,9 +130,9 @@
              <td><ul class="unstyled">
             <li><b>6:30-8:15</b></li>
           </ul></td>
-           
-           
-        </tr><tr> 
+
+
+        </tr><tr>
           <td><ul class="unstyled">
           <li><b>5:00-6:30</b></li>
           <li> child's name</li>
@@ -114,8 +144,8 @@
              <li> phone #</li></uL></td>
           <td><ul class="unstyled">
             <li><b>PNO 6:30-10:00</b><li></ul></td>
-           
-       
+
+
           </tbody>
       </table>
     </div>
