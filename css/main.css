@@ -1,9 +1,9 @@
 /*
-This rule will get applied to all th tags that are descendents of elements
+This rule will get applied to all "th" tags that are descendents of elements
 with the schedule-wrapper class
 */
 .schedule-wrapper th {
   font-size: 16px;
-  font-weight: 100;
-  color: #888;
+  font-weight: 1000;
+  color: #000;
 }
