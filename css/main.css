@@ -2,8 +2,20 @@
 This rule will get applied to all "th" tags that are descendents of elements
 with the schedule-wrapper class
 */
+
+
 .schedule-wrapper th {
   font-size: 16px;
   font-weight: 1000;
   color: #000;
+}
+/* css practice */
+body {
+		font-size .08cm;
+		color: navy;
+}
+
+h1 {
+		color:#ffc;
+		background-color:#009;
 }
